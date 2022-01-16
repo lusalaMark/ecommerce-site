@@ -1,12 +1,12 @@
+import React from "react";
 import "./App.css";
+import Header from "./Header.js";
 
 function App() {
   return (
     //BEM
     <div className="app">
-      <h1>
-        Hello Guys!! Here is the start of the build of the Ecommerce Site.
-      </h1>
+      <Header />
       {/*Header*/}
       {/*Home*/}
     </div>
