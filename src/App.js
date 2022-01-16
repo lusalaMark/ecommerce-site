@@ -7,6 +7,8 @@ function App() {
       <h1>
         Hello Guys!! Here is the start of the build of the Ecommerce Site.
       </h1>
+      {/*Header*/}
+      {/*Home*/}
     </div>
   );
 }
