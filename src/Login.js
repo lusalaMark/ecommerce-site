@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
 //import { Link, useHistory } from "react-router-dom";
-//import { auth } from "../config/firebase";
+import { auth } from "../config/firebase";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -13,24 +13,24 @@ function Login() {
     e.preventDefault();
 
     //firebase staff.
-    //   auth
-    //     .signInWithEmailAndPassword(email, password)
-    //     .then((res) => {
-    //       history.push("/");
-    //     })
-    //     .catch((e) => alert(e.message));
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((res) => {
+        history.push("/");
+      })
+      .catch((e) => alert(e.message));
   };
 
   const register = (e) => {
     e.preventDefault();
-    //some fancy firebase shit
+    //some fancy firebase register shitttttttt.....................nsticky
 
-    //   auth
-    //     .createUserWithEmailAndPassword(email, password)
-    //     .then((res) => {
-    //       history.push("/");
-    //     })
-    //     .catch((e) => alert(e.message));
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((res) => {
+        history.push("/");
+      })
+      .catch((e) => alert(e.message));
   };
 
   return (
