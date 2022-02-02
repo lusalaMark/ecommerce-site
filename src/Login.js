@@ -61,7 +61,7 @@ function Login() {
             Sign In
           </button>
           <p>
-            By signing innyou agree with the term aand condtitions ot this
+            By signing in you agree with the term aand conditions ot this
             ecommerce site
           </p>
           <button onClick={register} className="login__registerButton">
